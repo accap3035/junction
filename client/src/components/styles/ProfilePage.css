@@ -1,0 +1,74 @@
+/* ProfilePage.css */
+
+/* Center container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Profile box */
+.profile-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Profile title */
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* QR Code container */
+.qr-container {
+    margin-top: 20px;
+}
+
+/* QR Code styling */
+.qr-code {
+    margin-top: 15px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* QR Code text */
+.qr-text {
+    margin-top: 10px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Button styling */
+.profile-button {
+    margin-top: 20px;
+    background-color: #009345;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect for the button */
+.profile-button:hover {
+    background-color: #007a2c;
+}
+
+/* Disabled button state */
+.profile-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

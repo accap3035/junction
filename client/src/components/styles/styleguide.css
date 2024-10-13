@@ -1,0 +1,125 @@
+:root {
+    --button-1-font-family: "Inter", Helvetica;
+    --button-1-font-size: 16px;
+    --button-1-font-style: normal;
+    --button-1-font-weight: 500;
+    --button-1-letter-spacing: 0px;
+    --button-1-line-height: 24px;
+    --caption-1-medium-font-family: "Inter", Helvetica;
+    --caption-1-medium-font-size: 14px;
+    --caption-1-medium-font-style: normal;
+    --caption-1-medium-font-weight: 500;
+    --caption-1-medium-letter-spacing: 0px;
+    --caption-1-medium-line-height: 20px;
+    --caption-1-regular-font-family: "Inter", Helvetica;
+    --caption-1-regular-font-size: 14px;
+    --caption-1-regular-font-style: normal;
+    --caption-1-regular-font-weight: 400;
+    --caption-1-regular-letter-spacing: 0px;
+    --caption-1-regular-line-height: 20px;
+    --caption-2-regular-font-family: "Inter", Helvetica;
+    --caption-2-regular-font-size: 12px;
+    --caption-2-regular-font-style: normal;
+    --caption-2-regular-font-weight: 400;
+    --caption-2-regular-letter-spacing: 0px;
+    --caption-2-regular-line-height: 16px;
+    --color-tokens-background-button-button-type-default-primary-default: var(--primitives-colors-blue-500);
+    --color-tokens-background-input-default: var(--primitives-colors-greyscale-full-white);
+    --color-tokens-border-input-default: var(--primitives-colors-dark-blue-150);
+    --color-tokens-text-input-error: var(--primitives-colors-error-500);
+    --color-tokens-text-input-label: var(--primitives-colors-greyscale-900);
+    --color-tokens-text-input-placeholder: var(--primitives-colors-dark-blue-additional);
+    --primitives-colors-blue-500: rgba(67, 97, 238, 1);
+    --primitives-colors-dark-blue-150: rgba(224, 230, 237, 1);
+    --primitives-colors-dark-blue-650: rgba(23, 38, 60, 1);
+    --primitives-colors-dark-blue-700: rgba(18, 30, 50, 1);
+    --primitives-colors-dark-blue-additional: rgba(136, 142, 168, 1);
+    --primitives-colors-error-500: rgba(231, 81, 90, 1);
+    --primitives-colors-greyscale-400: rgba(192, 194, 196, 1);
+    --primitives-colors-greyscale-900: rgba(6, 8, 24, 1);
+    --primitives-colors-greyscale-full-white: rgba(255, 255, 255, 1);
+    --primitives-colors-MKT-green-500: rgba(23, 90, 90, 1);
+    --primitives-colors-teal-500: rgba(68, 149, 150, 1);
+    --primitives-number-scale-10: 10px;
+    --primitives-number-scale-12: 12px;
+    --primitives-number-scale-16: 16px;
+    --primitives-number-scale-6: 6px;
+    --primitives-number-scale-8: 8px;
+    --sizing-buttons-button-h-padding: var(--primitives-number-scale-10);
+    --sizing-buttons-button-v-padding: var(--primitives-number-scale-6);
+    --sizing-input-field-h-padding: var(--primitives-number-scale-16);
+    --sizing-input-field-radius: var(--sizing-radius-radius-6);
+    --sizing-input-field-spacing: var(--primitives-number-scale-6);
+    --sizing-input-field-v-padding: var(--primitives-number-scale-10);
+    --sizing-radius-radius-6: var(--primitives-number-scale-6);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-color-tokens-mode="light">
+        <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-color-tokens-mode="light"] {
+    --color-tokens-background-button-button-type-default-primary-default: var(--primitives-colors-blue-500);
+    --color-tokens-background-input-default: var(--primitives-colors-greyscale-full-white);
+    --color-tokens-border-input-default: var(--primitives-colors-dark-blue-150);
+    --color-tokens-text-input-label: var(--primitives-colors-greyscale-900);
+}
+
+[data-color-tokens-mode="dark"] {
+    --color-tokens-background-button-button-type-default-primary-default: var(--primitives-colors-blue-500);
+    --color-tokens-background-input-default: var(--primitives-colors-dark-blue-700);
+    --color-tokens-border-input-default: var(--primitives-colors-dark-blue-650);
+    --color-tokens-text-input-label: var(--primitives-colors-greyscale-400);
+}
+
+[data-color-tokens-mode="agro-CRM"] {
+    --color-tokens-background-button-button-type-default-primary-default: var(--primitives-colors-teal-500);
+    --color-tokens-background-input-default: var(--primitives-colors-greyscale-full-white);
+    --color-tokens-border-input-default: var(--primitives-colors-dark-blue-150);
+    --color-tokens-text-input-label: var(--primitives-colors-greyscale-900);
+}
+
+[data-color-tokens-mode="MKT"] {
+    --color-tokens-background-button-button-type-default-primary-default: var(--primitives-colors-MKT-green-500);
+    --color-tokens-background-input-default: var(--primitives-colors-greyscale-full-white);
+    --color-tokens-border-input-default: var(--primitives-colors-dark-blue-150);
+    --color-tokens-text-input-label: var(--primitives-colors-greyscale-900);
+}
+
+[data-sizing-buttons-mode="small"] {
+    --sizing-buttons-button-h-padding: var(--primitives-number-scale-10);
+    --sizing-buttons-button-v-padding: var(--primitives-number-scale-6);
+}
+
+[data-sizing-buttons-mode="medium"] {
+    --sizing-buttons-button-h-padding: var(--primitives-number-scale-12);
+    --sizing-buttons-button-v-padding: var(--primitives-number-scale-8);
+}
+
+[data-sizing-buttons-mode="large"] {
+    --sizing-buttons-button-h-padding: var(--primitives-number-scale-16);
+    --sizing-buttons-button-v-padding: var(--primitives-number-scale-12);
+}
+
+[data-sizing-mode="medium"] {
+    --sizing-input-field-h-padding: var(--primitives-number-scale-16);
+    --sizing-input-field-v-padding: var(--primitives-number-scale-10);
+}
+
+[data-sizing-mode="small"] {
+    --sizing-input-field-h-padding: var(--primitives-number-scale-10);
+    --sizing-input-field-v-padding: var(--primitives-number-scale-6);
+}
+
+[data-sizing-mode="large"] {
+    --sizing-input-field-h-padding: var(--primitives-number-scale-16);
+    --sizing-input-field-v-padding: var(--primitives-number-scale-12);
+}

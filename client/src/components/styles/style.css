@@ -1,0 +1,174 @@
+/* Main container */
+.sign-up {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #076735;
+    position: relative;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+/* Background image */
+.sign-up .unsplash {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+/* Form container */
+.sign-up .frame {
+    background-color: #ffffff;
+    width: 40%; /* Reduced the width to 40% */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px; /* Reduced the padding */
+    z-index: 1;
+    position: relative;
+}
+
+/* Logo and app name */
+.sign-up .div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px; /* Reduced the gap */
+}
+
+.sign-up .emojione {
+    height: 50px; /* Reduced logo size */
+    width: 50px;
+}
+
+.sign-up .text-wrapper {
+    color: #009345;
+    font-size: 36px; /* Reduced font size */
+    font-weight: 700;
+    font-family: "Kefa-Bold", Helvetica;
+}
+
+/* Signup title */
+.sign-up .text-wrapper-2 {
+    color: #060818;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Inter-SemiBold", Helvetica;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+/* Input fields */
+.sign-up .frame-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px; /* Reduced the gap between fields */
+}
+
+.sign-up .input-base {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up .label-2 {
+    font-size: 14px; /* Reduced label size */
+    font-weight: bold;
+    margin-bottom: 4px; /* Reduced gap between label and input */
+}
+
+.sign-up .input {
+    width: 100%;
+    padding: 8px 12px; /* Reduced padding */
+    font-size: 14px; /* Reduced input font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+.sign-up .input:focus {
+    border-color: #009345;
+    outline: none;
+}
+
+/* Submit button */
+.sign-up .button {
+    background-color: #076735;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    font-size: 16px; /* Reduced font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.sign-up .button:hover {
+    background-color: #065a2b;
+}
+
+.sign-up .button-2 {
+    text-align: center;
+    color: white;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 16px;
+}
+
+/* Alternative login section */
+.sign-up .frame-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Reduced gap between elements */
+    margin-top: 20px; /* Reduced top margin */
+}
+
+.sign-up .text-wrapper-4 {
+    font-size: 14px; /* Reduced font size */
+    color: #060818;
+    font-family: "Inter-Regular", Helvetica;
+}
+
+.sign-up .frame-4 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced gap */
+    border: 1px solid #e8ecf9;
+    border-radius: 10px;
+    padding: 12px 16px; /* Reduced padding */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign-up .image {
+    height: 24px; /* Reduced image size */
+    width: 60px;
+}
+
+.sign-up .text-wrapper-5 {
+    color: #3464c8;
+    font-size: 14px; /* Reduced font size */
+    font-weight: 600;
+}
+
+.sign-up .info-instance {
+    height: 14px;
+    width: 14px;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 12px; /* Reduced error message size */
+    margin-top: 10px;
+    text-align: center;
+}
